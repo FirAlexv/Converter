@@ -16,7 +16,9 @@ namespace TestProjectConverter
 
             // Act
             ConverterForm converterForm = new();
-            string actual = converterForm.ToBinary(value);
+            //Я попробовал решить ее но решение, которое было в интернете для меня, не подошло
+            string actual = converterForm.ToBinary(value);//Ошибка CS0012  Тип "Form" определен в сборке, на которую нет ссылки. Следует добавить ссылку на сборку "System.Windows.Forms, Version=4.0.0.0
+
 
             // Assert
             Assert.Equal(expected, actual);
